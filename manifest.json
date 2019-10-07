@@ -1,0 +1,21 @@
+{
+  "name": "hello-world-chrome-extension",
+  "manifest_version": 2,
+  "version": "1.0",
+  "browser_action": {
+    "default_icon": "icon_32.png",
+    "default_popup": "popup.html"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://www.google.com/", "https://www.google.com/"],
+      "js": ["content_scripts.js"]
+    }
+  ],
+  "permissions": [
+    "storage"
+  ],
+  "web_accessible_resources": [
+    "inpage.js"
+  ]
+}
