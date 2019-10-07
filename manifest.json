@@ -12,10 +12,21 @@
       "js": ["content_scripts.js"]
     }
   ],
+  "background": {
+    "scripts": ["background.js"]
+  },
   "permissions": [
     "storage"
   ],
   "web_accessible_resources": [
     "inpage.js"
-  ]
+  ],
+  "externally_connectable": {
+    "matches": [
+      "https://www.google.com/*"
+    ],
+    "ids": [
+      "*"
+    ]
+  }
 }

@@ -14,7 +14,6 @@ chrome.storage.local.get(["value1", "value2"], function(items) {
     console.log(items.value2); // -> "string2"
 });
 
-
 function injectScript () {
     try {
         const c = document.head || document.documentElement
